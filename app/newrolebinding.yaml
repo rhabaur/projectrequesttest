@@ -13,7 +13,7 @@ items:
   - apiGroup: rbac.authorization.k8s.io
     kind: User
     name: anna
-      #kind: List
+kind: List
       #metadata:
       #  resourceVersion: ""
       #  selfLink: ""
