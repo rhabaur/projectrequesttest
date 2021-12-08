@@ -3,11 +3,8 @@ items:
 - apiVersion: rbac.authorization.k8s.io/v1
   kind: RoleBinding
   metadata:
-    #    creationTimestamp: "2021-12-08T09:10:50Z"
     name: admin
     namespace: annasproject
-      #    resourceVersion: "263534"
-      #    uid: e2215a0b-739d-48d7-9b2d-147d96fd47ff
   roleRef:
     apiGroup: rbac.authorization.k8s.io
     kind: ClusterRole
@@ -23,11 +20,8 @@ items:
       openshift.io/description: Allows deploymentconfigs in this namespace to rollout
         pods in this namespace.  It is auto-managed by a controller; remove subjects
         to disable.
-        #    creationTimestamp: "2021-12-08T09:11:15Z"
     name: system:deployers
     namespace: annasproject
-      #    resourceVersion: "263665"
-      #    uid: b3163796-bf78-4ecf-bdbb-2c04466a192a
   roleRef:
     apiGroup: rbac.authorization.k8s.io
     kind: ClusterRole
@@ -42,11 +36,8 @@ items:
     annotations:
       openshift.io/description: Allows builds in this namespace to push images to
         this namespace.  It is auto-managed by a controller; remove subjects to disable.
-        #    creationTimestamp: "2021-12-08T09:11:10Z"
     name: system:image-builders
     namespace: annasproject
-      #    resourceVersion: "263647"
-      #    uid: 6f87d842-ee15-4ce8-9c6b-699a8d9c2942
   roleRef:
     apiGroup: rbac.authorization.k8s.io
     kind: ClusterRole
@@ -61,11 +52,8 @@ items:
     annotations:
       openshift.io/description: Allows all pods in this namespace to pull images from
         this namespace.  It is auto-managed by a controller; remove subjects to disable.
-        #    creationTimestamp: "2021-12-08T09:10:58Z"
     name: system:image-pullers
     namespace: annasproject
-      #    resourceVersion: "263601"
-      #    uid: 72f7c017-730e-493a-8aa0-c9fa7fee7785
   roleRef:
     apiGroup: rbac.authorization.k8s.io
     kind: ClusterRole
