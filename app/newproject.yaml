@@ -2,12 +2,9 @@ apiVersion: project.openshift.io/v1
 kind: Project
 metadata:
   annotations:
-    openshift.io/description: ""
-    openshift.io/display-name: ""
-    openshift.io/requester: anna
   labels:
-    kubernetes.io/metadata.name: annasproject
-  name: annasproject
+    kubernetes.io/metadata.name: testproject
+  name: testproject
 spec:
   finalizers:
   - kubernetes
