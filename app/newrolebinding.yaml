@@ -5,7 +5,7 @@ items:
   metadata:
     #    creationTimestamp: "2021-12-08T09:10:50Z"
     name: admin
-    namespace: test1
+    namespace: annasproject
       #    resourceVersion: "263534"
       #    uid: e2215a0b-739d-48d7-9b2d-147d96fd47ff
   roleRef:
@@ -25,7 +25,7 @@ items:
         to disable.
         #    creationTimestamp: "2021-12-08T09:11:15Z"
     name: system:deployers
-    namespace: test1
+    namespace: annasproject
       #    resourceVersion: "263665"
       #    uid: b3163796-bf78-4ecf-bdbb-2c04466a192a
   roleRef:
@@ -35,7 +35,7 @@ items:
   subjects:
   - kind: ServiceAccount
     name: deployer
-    namespace: test1
+    namespace: annasproject
 - apiVersion: rbac.authorization.k8s.io/v1
   kind: RoleBinding
   metadata:
@@ -44,7 +44,7 @@ items:
         this namespace.  It is auto-managed by a controller; remove subjects to disable.
         #    creationTimestamp: "2021-12-08T09:11:10Z"
     name: system:image-builders
-    namespace: test1
+    namespace: annasproject
       #    resourceVersion: "263647"
       #    uid: 6f87d842-ee15-4ce8-9c6b-699a8d9c2942
   roleRef:
@@ -54,7 +54,7 @@ items:
   subjects:
   - kind: ServiceAccount
     name: builder
-    namespace: test1
+    namespace: annasproject
 - apiVersion: rbac.authorization.k8s.io/v1
   kind: RoleBinding
   metadata:
@@ -63,7 +63,7 @@ items:
         this namespace.  It is auto-managed by a controller; remove subjects to disable.
         #    creationTimestamp: "2021-12-08T09:10:58Z"
     name: system:image-pullers
-    namespace: test1
+    namespace: annasproject
       #    resourceVersion: "263601"
       #    uid: 72f7c017-730e-493a-8aa0-c9fa7fee7785
   roleRef:
@@ -73,7 +73,7 @@ items:
   subjects:
   - apiGroup: rbac.authorization.k8s.io
     kind: Group
-    name: system:serviceaccounts:test1anna
+    name: system:serviceaccounts:annasproject
 kind: List
 metadata:
   resourceVersion: ""

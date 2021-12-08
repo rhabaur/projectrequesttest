@@ -10,8 +10,8 @@ metadata:
       #    openshift.io/sa.scc.uid-range: 1000660000/10000
       #  creationTimestamp: "2021-12-08T09:10:48Z"
   labels:
-    kubernetes.io/metadata.name: test1
-  name: test1
+    kubernetes.io/metadata.name: annasproject
+  name: annasproject
     #  resourceVersion: "263565"
     #  uid: 03716a4a-5542-49f7-ad2c-0f9b785a7f33
 spec:
